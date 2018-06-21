@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mark Rivera">
+    <meta name="description" content="Mark's Portfolio is currently under construction!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Code</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+  </head>
+  <body>
+
+    <div id="canvasContainer">
+      <img src="Images/AstronautMark.png" id="spaceMark">
+    </div>
+
+    <div class="space">
+      <h1 id="mainSign">Under Construction</h1>
+      <button id="contactMe"> Contact </button>
+    </div>
+
+    <div class="coverPanel inactiveCover" id="coverPanel">
+
+      <div class="burgerBread">
+        <div class="burgerBit" id="pattyOne"></div>
+        <div class="burgerBit" id="pattyTwo"></div>
+      </div>
+
+      <div class="sidePanel inactive" id="contactPanel">
+        <form class="emailInactive form-group" action="" method="POST" id="emailForm" novalidate>
+          <fieldset id="field">
+
+            <legend class="h1">Feel free to message me:</legend>
+
+            <div class="form-container">
+              <label for="email">
+                <div>Email: </div> <input class="invalid" type="email" name="email" value="" id="email" autocomplete="off"> <span id="badInput">Please enter a valid Email Address</span>
+              </label>
+            </div>
+
+            <div class="form-container">
+              <label for="message">
+                <div>Message: </div> <textarea class="" name="message" rows="8" cols="80" id="message" maxlength="1000"></textarea>
+              </label>
+            </div>
+
+            <button type="submit" name="submitButton" form="emailForm" id="emailButton">Send Email</button>
+          </fieldset>
+          <em id="contactInfo">Email Address: SolarCode2018@gmail.com</em>
+        </form>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="Scripts/jqueryRotate.js"></script>
+    <script src="Scripts/remadeScript.js"></script>
+  </body>
+</html>

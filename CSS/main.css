@@ -1,0 +1,534 @@
+@media screen and (max-width: 450px) {
+  html, body {
+    overflow-y: visible;
+    width: 100vw;
+    height: 100%;
+  }
+
+  #canvasContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  #spaceMark {
+    position: absolute;
+    z-index: 0;
+    width: 80px;
+  }
+
+  .space {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#11051b,#220a37);
+    text-align: center;
+    }
+
+    #mainSign {
+      display: block;
+      position: relative;
+      top: 25vh;
+      color: #FFF;
+      font-size: 10vw;
+    }
+
+    #contactMe {
+      display: inline-block;
+      padding: 10px 0 10px 20px;
+      border: 3px solid #FFF;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 0 15px 0 #FFF;
+
+      color: #FFF;
+      text-align: center;
+      font-family: helvetica, sans-serif;
+      font-size: 4vw;
+      letter-spacing: 4vw;
+
+      position: relative;
+      top: 30vh;
+      z-index: 101;
+
+      transition: color .25s;
+      transition: background-color .25s;
+    }
+
+    #contactMe:hover {
+      background-color: #FFF;
+      color: #220a37;
+    }
+
+  .coverPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color .25s;
+  }
+
+  .inactiveCover {
+    background-color: rgba(0,0,0,0);
+  }
+
+  .activeCover {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+  }
+
+  .sidePanel {
+    background-color: #11051b;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 103;
+    height: 100%;
+    padding: 5% 0;
+    text-align: center;
+  }
+
+  .inactive {
+    width: 0vw;
+    transition: width .25s;
+  }
+
+  .active {
+    width: 75vw;
+    transition: width .25s;
+  }
+
+  .emailInactive {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .25s;
+  }
+
+  .emailActive {
+    display: inline-block;
+    position:relative;
+    z-index: 103;
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s;
+  }
+
+  .burgerBread {
+
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    width: 100%;
+    max-width: 25px;
+    height: 100%;
+    max-height: 25px;
+    text-align: center;
+    padding:0px 0;
+    z-index: 103;
+  }
+
+  .burgerBit {
+    height: 100%;
+    max-height: 5px;
+    width: 25px;
+    max-width: 25px;
+    display: inline-block;
+    opacity: 0;
+    background-color: #2f2f2f;
+    transition: opacity .25s;
+  }
+
+  .burgerBread:hover > .burgerBit {
+    background-color: #585858;
+  }
+
+  .activeBurger {
+    opacity: 1;
+    transition: opacity .25s;
+  }
+
+  #pattyOne {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+  }
+
+  #pattyTwo {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  }
+
+  #emailForm {
+    width: 100%;
+  }
+
+  .form-container {
+    margin-top: 15px;
+  }
+
+  .h1 {
+    color: white;
+    font-size: 4vw;
+  }
+
+  #email {
+    width: 100%;
+    background-color: #11051b;
+    color: white;
+    padding-left: 5px;
+    font-size: 3vw;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px white solid;
+    margin: 0 auto;
+  }
+
+  #email:focus {
+    outline: none;
+  }
+
+  label {
+    display: inline;
+    font-weight: bold;
+    color: white;
+  }
+
+  #message {
+    background-color: #11051b;
+    color: white;
+    width: 95%;
+    resize: none;
+    margin-top: 10px;
+  }
+
+  #message:focus {
+    outline: none;
+  }
+
+  #emailButton {
+    height: 50px;
+    width: 50%;
+    background-color: #11051b;
+    box-shadow: 0 0 15px 0 #FFF;
+    color: white;
+    letter-spacing: 5px;
+    transition: box-shadow .25s;
+    margin-top: 10px;
+  }
+
+  #emailButton:hover {
+    box-shadow: 0 0 25px 5px #FFF;
+  }
+
+  #emailButton:focus {
+    outline: #FFF;
+  }
+
+  #badInput {
+    display: none;
+    width: 100%;
+    background-color: #ff4c4c;
+    border: 2px solid #ff0000;
+    border-radius:  0 0 5px 5px;
+    color: #ffcccc;
+  }
+
+  .emailInactive {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .25s;
+  }
+
+  .emailActive {
+    display: inline-block;
+    position:relative;
+    z-index: 103;
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s;
+  }
+
+  #contactInfo {
+    position: fixed;
+    top: 95%;
+    left: 2%;
+    color: #787878;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 451px) {
+
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+  }
+
+  .space {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#11051b,#220a37);
+    text-align: center;
+    padding: 15% 0;
+  }
+
+  #canvasContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  #spaceMark {
+    position: absolute;
+    z-index: 0;
+    width: 80px;
+  }
+
+  #mainSign {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 10vw;
+  }
+
+  #contactMe {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 50px;
+    width: 50%;
+    border: 5px solid #FFF;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 15px 0 #FFF;
+
+    color: #FFF;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    font-size: 4vw;
+    line-height: 1;
+    letter-spacing: 1rem;
+
+    position: relative;
+    z-index: 101;
+
+    transition: color .25s;
+    transition: background-color .25s;
+  }
+
+  #contactMe:hover {
+    background-color: #FFF;
+    color: #220a37;
+  }
+
+
+  /*SIDE PANEL CSS*/
+
+  .coverPanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color .25s;
+  }
+
+  .inactiveCover {
+    background-color: rgba(0,0,0,0);
+  }
+
+  .activeCover {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+  }
+
+  .sidePanel {
+    background-color: #11051b;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 103;
+    height: 100%;
+    padding: 5% 0;
+    color: white;
+    text-align: center;
+  }
+
+  .inactive {
+    width: 0vw;
+    transition: width .25s;
+  }
+
+  .active {
+    width: 50vw;
+    transition: width .25s;
+  }
+
+  #contactPanel {
+
+  }
+
+  legend {
+    margin-bottom: 25px !important;
+  }
+
+  .form-container {
+    margin-bottom: 25px;
+  }
+
+  label {
+    display: inline;
+    font-weight: bold;
+  }
+
+  #emailForm {
+    width: 100%;
+  }
+
+  #email {
+    width: 75%;
+    background-color: #11051b;
+    color: white;
+    padding-left: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px white solid;
+    margin: 0 auto;
+  }
+
+  #email:focus {
+    outline: none;
+  }
+
+  #message {
+    background-color: #11051b;
+    color: white;
+    width: 95%;
+    resize: none;
+    margin-top: 10px;
+  }
+
+  #message:focus {
+    outline: none;
+  }
+
+  #emailButton {
+    height: 75px;
+    width: 50%;
+    background-color: #11051b;
+    box-shadow: 0 0 15px 0 #FFF;
+    color: white;
+    letter-spacing: 5px;
+    transition: box-shadow .25s;
+  }
+
+  #emailButton:hover {
+    box-shadow: 0 0 25px 5px #FFF;
+  }
+
+  #emailButton:focus {
+    outline: #FFF;
+  }
+
+  #badInput {
+    display: none;
+    width: 75%;
+    background-color: #ff4c4c;
+    border: 2px solid #ff0000;
+    border-radius:  0 0 5px 5px;
+    color: #ffcccc;
+  }
+
+  .emailInactive {
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .25s;
+  }
+
+  .emailActive {
+    display: inline-block;
+    position:relative;
+    z-index: 103;
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s;
+  }
+
+  #contactInfo {
+    position: fixed;
+    top: 95%;
+    left: 2%;
+    color: #787878;
+  }
+
+  /*Close button for modal*/
+
+  .burgerBread {
+
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    width: 100%;
+    max-width: 25px;
+    height: 100%;
+    max-height: 25px;
+    text-align: center;
+    padding:0px 0;
+    z-index: 103;
+  }
+
+  .burgerBit {
+    height: 100%;
+    max-height: 5px;
+    width: 25px;
+    max-width: 25px;
+    display: inline-block;
+    opacity: 0;
+    background-color: #2f2f2f;
+    transition: opacity .25s;
+  }
+
+  .burgerBread:hover > .burgerBit {
+    background-color: #585858;
+  }
+
+  .activeBurger {
+    opacity: 1;
+    transition: opacity .25s;
+  }
+
+  #pattyOne {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+  }
+
+  #pattyTwo {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  }
+
+}
